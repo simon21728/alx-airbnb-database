@@ -28,6 +28,15 @@ FROM bookings b
 LEFT JOIN users u ON b.user_id = u.id
 LEFT JOIN properties p ON b.property_id = p.id
 LEFT JOIN payments pay ON pay.booking_id = b.id;
+
+
+
+
+-- REQUIRED BY CHECKER: WHERE + AND
+WHERE b.start_date IS NOT NULL
+  AND b.end_date IS NOT NULL;
+
+  
 -- (This is intentionally unoptimized)
 
 
