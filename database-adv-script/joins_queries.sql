@@ -40,3 +40,4 @@ SELECT
 FROM users
 FULL OUTER JOIN bookings
     ON users.id = bookings.user_id;
+ORDER BY properties.id, reviews.id;
