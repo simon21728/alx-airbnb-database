@@ -45,3 +45,22 @@ WHERE (
         FROM reviews r
         WHERE r.property_id = p.id
       ) > 4.0;
+
+
+
+
+# Aggregations and Window Functions
+
+This module demonstrates the use of SQL aggregation and window functions on the Airbnb-style booking dataset.
+
+## Tasks
+
+### 1. Total Bookings Per User
+We use the COUNT() function with GROUP BY to calculate how many bookings each user has made.
+
+### 2. Ranking Properties by Bookings
+We use a window function (RANK or ROW_NUMBER) to list properties in order of how many bookings they have received.
+
+## SQL Queries
+
+See `aggregations_and_window_functions.sql` for the full implementation.
