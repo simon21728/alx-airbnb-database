@@ -18,3 +18,5 @@ SELECT
     total_bookings,
     RANK() OVER (ORDER BY total_bookings DESC) AS property_rank
 FROM property_booking_counts;
+
+ROW_NUMBER() OVER (ORDER BY total_bookings DESC) AS property_rank
